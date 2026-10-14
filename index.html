@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بحث مصور: الهندسة التكعيبية في الفن التشكيلي — إعداد مازن عمرو</title>
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+
+  <!-- Open Graph / Social Sharing Meta Tags -->
+  <meta property="og:title" content="بحث مصور: الهندسة التكعيبية في الفن التشكيلي — إعداد مازن عمرو">
+  <meta property="og:description" content="مشروع بحثي تفاعلي مصور لمادة التربية الفنية — ثورة الخطوط والزوايا والأبعاد">
+  <meta property="og:type" content="website">
+
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Cairo & Amiri -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: {
+            cairo: ["Cairo", "sans-serif"],
+            amiri: ["Amiri", "serif"],
+          },
+          colors: {
+            cubist: {
+              gold: "#D4AF37",
+              ochre: "#C68B59",
+              amber: "#B45309",
+              dark: "#0F1117",
+              charcoal: "#1A1D24",
+              slate: "#2A2F3B",
+              canvas: "#F4EBD9"
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 5rem;
+    }
+    body {
+      font-family: "Cairo", sans-serif;
+      background-color: #0B0D13;
+      color: #E2E8F0;
+    }
+    .quote-font { font-family: "Amiri", serif; }
+    
+    /* Custom Sleek Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0B0D13;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2A2F3B;
+      border-radius: 5px;
+      border: 2px solid #0B0D13;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #D4AF37;
+    }
+    
+    /* Geometric background grid & accents */
+    .cubist-mesh {
+      background-image: 
+        linear-gradient(135deg, rgba(212, 175, 55, 0.04) 25%, transparent 25%), 
+        linear-gradient(225deg, rgba(212, 175, 55, 0.04) 25%, transparent 25%), 
+        linear-gradient(45deg, rgba(212, 175, 55, 0.04) 25%, transparent 25%), 
+        linear-gradient(315deg, rgba(212, 175, 55, 0.04) 25%, #0B0D13 25%);
+      background-position: 40px 0, 40px 0, 0 0, 0 0;
+      background-size: 80px 80px;
+      background-repeat: repeat;
+    }
+    
+    .glass-panel {
+      background: rgba(26, 29, 36, 0.85);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(212, 175, 55, 0.15);
+    }
+    
+    .glass-panel:hover {
+      border-color: rgba(212, 175, 55, 0.4);
+    }
+
+    /* Print Optimization for School Submission */
+    @page {
+      size: A4;
+      margin: 1.5cm;
+    }
+    @media print {
+      body {
+        background-color: #FFFFFF !important;
+        color: #111827 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .print-only {
+        display: block !important;
+      }
+      .glass-panel {
+        background: #FFFFFF !important;
+        border: 1px solid #E5E7EB !important;
+        color: #111827 !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+      h1, h2, h3, h4, p, span {
+        color: #111827 !important;
+      }
+      .text-cubist-gold, .text-amber-400 {
+        color: #92400E !important;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+    }
+  </style>
+</head>
+<body class="cubist-mesh selection:bg-amber-600 selection:text-white min-h-screen">
+
+  <!-- Top Sticky Navigation -->
+  <header class="no-print sticky top-0 z-50 border-b border-amber-500/20 bg-[#0B0D13]/90 backdrop-blur-xl px-4 py-3">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-700 via-amber-600 to-yellow-500 flex items-center justify-center text-slate-950 font-black text-lg shadow-lg shadow-amber-500/20">
+          <i class="fa-solid fa-shapes"></i>
+        </div>
+        <div>
+          <h1 class="text-sm font-black text-white tracking-wide">الهندسة التكعيبية <span class="text-amber-400">في الفن</span></h1>
+          <p class="text-[10px] text-slate-400">بحث مصور — التربية الفنية</p>
+        </div>
+      </div>
+
+      <!-- Nav links for desktop -->
+      <nav class="hidden lg:flex items-center gap-5 text-xs font-bold text-slate-300">
+        <a href="#intro" class="hover:text-amber-400 transition">النشأة والفلسفة</a>
+        <a href="#principles" class="hover:text-amber-400 transition">الخصائص الهندسية</a>
+        <a href="#stages" class="hover:text-amber-400 transition">مراحل التكعيبية</a>
+        <a href="#masters" class="hover:text-amber-400 transition">رواد الحركة</a>
+        <a href="#gallery" class="hover:text-amber-400 transition">المعرض المصور</a>
+        <a href="#lab" class="hover:text-amber-400 transition">المختبر التفاعلي</a>
+        <a href="#student" class="hover:text-amber-400 transition">بيانات البحث</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-2">
+        <button onclick="window.print()" class="px-3.5 py-2 rounded-xl bg-amber-600/20 hover:bg-amber-600/30 border border-amber-500/40 text-amber-300 text-xs font-bold transition flex items-center gap-1.5 shadow-sm" title="طباعة أو حفظ البحث كملف PDF">
+          <i class="fa-solid fa-print"></i>
+          <span>طباعة البحث (PDF)</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero & Cover Section -->
+  <section class="relative overflow-hidden py-12 sm:py-20 border-b border-amber-500/15">
+    <div class="max-w-5xl mx-auto px-4 text-center space-y-6 relative z-10">
+      
+      <!-- Academic Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold">
+        <i class="fa-solid fa-award"></i>
+        <span>مشروع بحثي مصور لمادة التربية الفنية</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
+        ثورة الخطوط والزوايا والأبعاد: <br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-yellow-500">
+          الهندسة التكعيبية في الفن التشكيلي
+        </span>
+      </h1>
+
+      <p class="text-sm sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed quote-font text-xl">
+        «حينما تمرد الفنانون على المنظور الإقليدي التقليدي، وحولوا الطبيعة والكائنات إلى أسطوانات، ومكعبات، ومخاريط؛ ليروا الواقع من كل زواياه في لحظة واحدة.»
+      </p>
+
+      <!-- Meta Pill -->
+      <div class="pt-4 flex flex-wrap items-center justify-center gap-4 text-xs font-semibold text-slate-400">
+        <span class="bg-slate-900/80 px-3.5 py-2 rounded-xl border border-slate-800"><i class="fa-solid fa-user text-amber-400 ml-1.5"></i>إعداد الطالب: <strong class="text-white font-bold">مازن عمرو</strong></span>
+        <span class="bg-slate-900/80 px-3.5 py-2 rounded-xl border border-slate-800"><i class="fa-solid fa-palette text-amber-400 ml-1.5"></i>المادة: <strong class="text-white font-bold">التربية الفنية</strong></span>
+        <span class="bg-slate-900/80 px-3.5 py-2 rounded-xl border border-slate-800"><i class="fa-solid fa-chalkboard-user text-amber-400 ml-1.5"></i>المشرفة: <strong class="text-white font-bold">معلمة الرسم والتربية الفنية</strong></span>
+      </div>
+
+      <!-- Quick action scroll -->
+      <div class="pt-4 no-print">
+        <a href="#intro" class="inline-flex items-center gap-2 text-xs font-bold text-amber-400 hover:text-amber-300 transition">
+          <span>ابدأ قراءة البحث واستكشاف اللوحات</span>
+          <i class="fa-solid fa-chevron-down text-[10px]"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Introduction & Philosophy -->
+  <section id="intro" class="py-16 border-b border-slate-800/80">
+    <div class="max-w-5xl mx-auto px-4 space-y-10">
+      
+      <div class="text-right space-y-2">
+        <span class="text-xs font-bold text-amber-400 tracking-widest uppercase">المحور الأول</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-white flex items-center gap-2.5">
+          <i class="fa-solid fa-compass-drafting text-amber-500"></i>
+          <span>النشأة والجذور الفلسفية للتكعيبية</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+        <div class="glass-panel rounded-2xl p-6 sm:p-8 space-y-4">
+          <h3 class="text-base font-bold text-amber-300 flex items-center gap-2">
+            <i class="fa-solid fa-seedling"></i> كيف بدأت الثورة؟
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            ظهرت المدرسة التكعيبية (Cubism) في باريس بين عامي <strong>1907 و1914</strong> كأعظم حركة فنية ثورية في تاريخ الفن الحديث. قاد هذه الحركة الفنان الإسباني <strong>بابلو بيكاسو</strong> والفرنسي <strong>جورج براك</strong>.
+          </p>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            قبل التكعيبية، كان الفن التشكيلي منذ عصر النهضة يلتزم بنظام <strong>"المنظور الأحادي ذي نقطة التلاشي الواحدة"</strong>، حيث يرسم الفنان الشيء كما تراه عينه من زاوية ثنائية الأبعاد، محاكياً الطبيعة بأسلوب كلاسيكي. جاءت التكعيبية لترفض هذا التقليد، معلنةً أن اللوحة سطح مستوٍ مستقل بذاته، وليست نافذة تخدع البصر بالعمق الوهمي.
+          </p>
+        </div>
+
+        <div class="glass-panel rounded-2xl p-6 sm:p-8 space-y-4 flex flex-col justify-between border-amber-500/30 bg-amber-950/10">
+          <div class="space-y-3">
+            <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block">الأب الروحي للتكعيبية</span>
+            <h4 class="text-lg font-black text-white">مقولة بول سيزان التاريخية</h4>
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-amber-500/20 quote-font text-lg text-amber-200 leading-relaxed">
+              «عاملوا الطبيعة بالأسطوانة، والكرة، والمخروط، مع وضع كل شيء في إطار المنظور الصحيح.»
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              كان الرسام الفرنسي <strong>بول سيزان (Paul Cezanne)</strong> أول من لفت أنظار بيكاسو وبراك إلى أن جميع أشكال الكون المعقدة تعود في أصلها التكويني إلى أشكال ومجسمات هندسية أولية وبسيطة.
+            </p>
+          </div>
+
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-slate-400 flex items-center gap-2">
+            <i class="fa-solid fa-lightbulb text-amber-400"></i>
+            <span>تأثرت التكعيبية أيضاً بالأقنعة والمنحوتات الإفريقية التجريدية التي ألهمت بيكاسو في باريس.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 2: Geometric Principles -->
+  <section id="principles" class="py-16 border-b border-slate-800/80 bg-slate-950/40">
+    <div class="max-w-5xl mx-auto px-4 space-y-10">
+      
+      <div class="text-right space-y-2">
+        <span class="text-xs font-bold text-amber-400 tracking-widest uppercase">المحور الثاني</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-white flex items-center gap-2.5">
+          <i class="fa-solid fa-cube text-amber-500"></i>
+          <span>الخصائص البصرية والتقنية للهندسة التكعيبية</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-400">القواعد الفنية التي اعتمد عليها التكعيبيون لإعادة بناء العالم المرئي:</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <!-- Principle 1 -->
+        <div class="glass-panel rounded-2xl p-5 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-600/20 text-blue-400 flex items-center justify-center text-lg border border-blue-500/30">
+            <i class="fa-solid fa-vector-square"></i>
+          </div>
+          <h3 class="text-sm font-bold text-white">1. التسطيح الهندسي</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            تحويل الأجسام ثلاثية الأبعاد إلى مساحات ومستويات هندسية متداخلة ومسطحة على القماش دون استخدام الظل والنور التقليدي.
+          </p>
+        </div>
+
+        <!-- Principle 2 -->
+        <div class="glass-panel rounded-2xl p-5 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-amber-600/20 text-amber-400 flex items-center justify-center text-lg border border-amber-500/30">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <h3 class="text-sm font-bold text-white">2. المنظور متعدد الزوايا</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            رسم الوجه من الأمام (Full face) والجانب (Profile) في الوقت نفسه داخل نفس التكوين، بحيث يرى المشاهد كل الجوانب معاً.
+          </p>
+        </div>
+
+        <!-- Principle 3 -->
+        <div class="glass-panel rounded-2xl p-5 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-purple-600/20 text-purple-400 flex items-center justify-center text-lg border border-purple-500/30">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </div>
+          <h3 class="text-sm font-bold text-white">3. إدخال البعد الرابع (الزمن)</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            تزامن ظهور التكعيبية مع نظرية النسبية لأينشتاين؛ فاعتبر الفنانون أن حركة المشاهد حول العنصر وإدراك زمن الرؤية هو البعد الرابع للوحة.
+          </p>
+        </div>
+
+        <!-- Principle 4 -->
+        <div class="glass-panel rounded-2xl p-5 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-600/20 text-emerald-400 flex items-center justify-center text-lg border border-emerald-500/30">
+            <i class="fa-solid fa-scissors"></i>
+          </div>
+          <h3 class="text-sm font-bold text-white">4. فن الكولاج والقصاصات</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            ابتكار تقنية لصق خامات واقعية (قصاصات صحف، قماش، خشب، حروف مطبوعة) داخل العمل لدمج الواقع الملموس مع التجريد الهندسي.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 3: The Two Stages (Analytical vs Synthetic) -->
+  <section id="stages" class="py-16 border-b border-slate-800/80">
+    <div class="max-w-5xl mx-auto px-4 space-y-10">
+      
+      <div class="text-right space-y-2">
+        <span class="text-xs font-bold text-amber-400 tracking-widest uppercase">المحور الثالث</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-white flex items-center gap-2.5">
+          <i class="fa-solid fa-code-compare text-amber-500"></i>
+          <span>المرحلتان التكعيبتان الكبريان: التحليلية مقابل التركيبية</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-400">مقارنة بصرية وتحليلية بين الفترتين الأساسيتين للحركة:</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Stage 1: Analytical -->
+        <div class="glass-panel rounded-3xl p-6 sm:p-8 space-y-4 border-slate-700 relative overflow-hidden">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <span class="text-xs font-mono font-bold text-slate-400">1908 – 1912</span>
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">المرحلة الأولى</span>
+          </div>
+          
+          <h3 class="text-lg font-black text-white">التكعيبية التحليلية (Analytical Cubism)</h3>
+          
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            تقوم هذه المرحلة على <strong>«تشريح وتفكيك»</strong> موضوع اللوحة إلى أجزاء هندسية متناهية الصغر، وإعادة رسمها كمسطحات حادة تتداخل مع بعضها البعض.
+          </p>
+
+          <div class="space-y-2 text-xs text-slate-300">
+            <div class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-amber-400 mt-1 flex-shrink-0"></i>
+              <span><strong>اللون:</strong> التقشف اللوني التام (Monochromatic) بالاعتماد على درجات الرمادي، البني، البيج، والأسود فقط، حتى لا يشتت اللون عين المشاهد عن الهندسة.</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-amber-400 mt-1 flex-shrink-0"></i>
+              <span><strong>النتيجة:</strong> اقتربت اللوحات من التجريد الشبه تام، لدرجة يصعب معها تمييز العنصر الأصلي بسهولة دون إشارات مفتاحية (مثل أوتار كمان أو يد كرسي).</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 2: Synthetic -->
+        <div class="glass-panel rounded-3xl p-6 sm:p-8 space-y-4 border-amber-500/30 bg-amber-950/10 relative overflow-hidden">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <span class="text-xs font-mono font-bold text-amber-400">1912 – 1919</span>
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-blue-500/20 text-blue-300 border border-blue-500/30">المرحلة الثانية</span>
+          </div>
+          
+          <h3 class="text-lg font-black text-white">التكعيبية التركيبية (Synthetic Cubism)</h3>
+          
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            شعر بيكاسو وبراك أن اللوحات التحليلية أصبحت غامضة جداً، فانتقلا إلى مرحلة <strong>«التركيب والبناء»</strong>: بدلاً من تفتيت الشيء، بدأوا بتجميع مسطحات هندسية بسيطة ومبهجة لتكوين الموضوع.
+          </p>
+
+          <div class="space-y-2 text-xs text-slate-300">
+            <div class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-blue-400 mt-1 flex-shrink-0"></i>
+              <span><strong>اللون:</strong> عودة الألوان الزاهية والمتباينة بقوة وبمساحات واسعة ومنبسطة.</span>
+            </div>
+            <div class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-blue-400 mt-1 flex-shrink-0"></i>
+              <span><strong>ابتكار الكولاج:</strong> ولادة فن الكولاج (Collage / Papier Colle) بلصق قصاصات الجرائد، ورق الحائط، والملصقات التجارية مباشرة فوق القماش.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 4: Masters of Cubism -->
+  <section id="masters" class="py-16 border-b border-slate-800/80 bg-slate-950/40">
+    <div class="max-w-5xl mx-auto px-4 space-y-10">
+      
+      <div class="text-right space-y-2">
+        <span class="text-xs font-bold text-amber-400 tracking-widest uppercase">المحور الرابع</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-white flex items-center gap-2.5">
+          <i class="fa-solid fa-user-astronaut text-amber-500"></i>
+          <span>رواد الفن التكعيبي وإسهاماتهم</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-400">أبرز العباقرة الذين بنوا صرح الهندسة التكعيبية في العالم والوطن العربي:</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Master 1: Picasso -->
+        <div class="glass-panel rounded-3xl p-6 space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl font-bold border border-amber-500/30">
+              P
+            </div>
+            <h3 class="text-base font-black text-white">بابلو بيكاسو (1881 - 1973)</h3>
+            <span class="text-[11px] text-amber-400 font-semibold block">إسبانيا — المؤسس والشعلة الثورية</span>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              العبقري الأكثر تأثيراً في القرن العشرين. أطلق الشرارة الأولى للتكعيبية بلوحته الصادمة <em>«آنسات أفينيون» (1907)</em>. تميزت أعماله بالجرأة الهندسية الفائقة، وتفكيك التشريح الإنساني، والتعبير عن المآسي السياسية كما في رائعته الخالدة <em>«الجورنيكا»</em>.
+            </p>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
+            <strong>أشهر أعماله:</strong> آنسات أفينيون، الجورنيكا، البكاء، عازف الأكورديون.
+          </div>
+        </div>
+
+        <!-- Master 2: Braque -->
+        <div class="glass-panel rounded-3xl p-6 space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-2xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-xl font-bold border border-blue-500/30">
+              B
+            </div>
+            <h3 class="text-base font-black text-white">جورج براك (1882 - 1963)</h3>
+            <span class="text-[11px] text-blue-400 font-semibold block">فرنسا — المهندس الهادئ ومبتكر الكولاج</span>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              الشريك المؤسس مع بيكاسو. كان براك يتميز بالانضباط الهندسي المتزن وتركيزه الشديد على الآلات الموسيقية والطبيعة الصامتة. هو أول من أدخل الحروف والأرقام المطبوعة وقصاصات الورق في اللوحة التكعيبية.
+            </p>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
+            <strong>أشهر أعماله:</strong> كمان وشمعدان، صحن الفواكه، عازف الكلارينيت.
+          </div>
+        </div>
+
+        <!-- Master 3: Juan Gris -->
+        <div class="glass-panel rounded-3xl p-6 space-y-4 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-2xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-xl font-bold border border-purple-500/30">
+              G
+            </div>
+            <h3 class="text-base font-black text-white">خوان جريس (1887 - 1927)</h3>
+            <span class="text-[11px] text-purple-400 font-semibold block">إسبانيا — فيلسوف التكعيبية والرياضيات</span>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              وصف بأنه أكثر التكعيبيين صفاءً والتزاماً بالقواعد الهندسية والرياضية. استخدم النسبة الذهبية والتناغم اللوني البديع، وحوّل التكعيبية من تجربة فوضوية إلى نظام بصري شديد الرقي والدقة.
+            </p>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
+            <strong>أشهر أعماله:</strong> بورتريه بيكاسو، الطبيعة الصامتة مع رقعة الشطرنج.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Arab & Egyptian Cubist Legacy -->
+      <div class="glass-panel rounded-2xl p-6 sm:p-8 space-y-3 border-emerald-500/30 bg-emerald-950/10">
+        <h3 class="text-sm font-bold text-emerald-300 flex items-center gap-2">
+          <i class="fa-solid fa-landmark"></i> التكعيبية في الفن التشكيلي المصري والعربي
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          تأثر رواد حركة الفن الحديث في مصر والوطن العربي بالتكعيبية وطوعوا هندستها للتعبير عن الروح الوطنية والبيئة الشعبية. ومن أبرزهم الفنان المصري <strong>حامد عويس</strong> الذي استخدم الخطوط والكتل الهندسية الضخمة للتعبير عن صلابة العمال والفلاحين، والفنان <strong>رمسيس يونان</strong>، وفنان الكاريكاتير والتشكيل <strong>جورج بهجوري</strong> الذي اشتهرت رسوماته ووجوهه الشعبية بتفكيك الملامح على الطريقة التكعيبية البصرية.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 5: Interactive Visual Gallery (معرض اللوحات المصور) -->
+  <section id="gallery" class="py-16 border-b border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-4 space-y-10">
+      
+      <div class="text-right space-y-2">
+        <span class="text-xs font-bold text-amber-400 tracking-widest uppercase">المحور الخامس</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-white flex items-center gap-2.5">
+          <i class="fa-solid fa-images text-amber-500"></i>
+          <span>المعرض البصري المصور: روائع اللوحات وتحليلها الهندسي</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-400">اضغط على أي لوحة لتكبيرها وقراءة دراسة تفكيكها الهندسي بالتفصيل:</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Artwork 1: Les Demoiselles d Avignon -->
+        <div class="glass-panel rounded-3xl overflow-hidden group cursor-pointer border border-slate-800 hover:border-amber-500/50 transition duration-300 flex flex-col justify-between" onclick="openLightbox(0)">
+          <div class="relative overflow-hidden bg-slate-950 h-56 flex items-center justify-center p-2">
+            <!-- Stylized High-Fidelity Cubist SVG Representation -->
+            <svg class="w-full h-full object-contain transition duration-500 group-hover:scale-105" viewBox="0 0 400 300">
+              <defs>
+                <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#C68B59" />
+                  <stop offset="100%" stop-color="#4A3423" />
+                </linearGradient>
+              </defs>
+              <rect width="400" height="300" fill="#1C1814"/>
+              <polygon points="50,20 130,70 90,220 30,180" fill="url(#g1)" stroke="#D4AF37" stroke-width="1.5" opacity="0.9"/>
+              <polygon points="120,40 220,10 200,160 110,120" fill="#8C5E3C" stroke="#E5E7EB" stroke-width="1.2" opacity="0.85"/>
+              <polygon points="210,30 330,60 290,240 180,180" fill="url(#g1)" stroke="#D4AF37" stroke-width="1.5" opacity="0.9"/>
+              <polygon points="280,40 370,110 350,280 270,220" fill="#5A3D28" stroke="#D4AF37" stroke-width="1.5"/>
+              <polygon points="300,70 360,90 340,160 280,140" fill="#3D5A80" stroke="#93C5FD" stroke-width="1.5" opacity="0.95"/>
+              <polygon points="310,100 340,110 330,140" fill="#EE6C4D"/>
+              <line x1="120" y1="40" x2="290" y2="240" stroke="#FDE68A" stroke-width="2" stroke-dasharray="3,3"/>
+              <line x1="50" y1="200" x2="350" y2="100" stroke="#93C5FD" stroke-width="1.5"/>
+            </svg>
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-lg text-amber-400"></i>
+              <span>تكبير وتحليل اللوحة</span>
+            </div>
+            <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-amber-300">1907</span>
+          </div>
+
+          <div class="p-5 space-y-2">
+            <h3 class="text-sm font-bold text-white group-hover:text-amber-300 transition">آنسات أفينيون (Les Demoiselles d Avignon)</h3>
+            <p class="text-[11px] text-amber-400 font-semibold">بابلو بيكاسو • متحف الفن الحديث (MoMA - نيويورك)</p>
+            <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed">
+              حجر الزاوية الذي ولد منه الفن الحديث. قام بيكاسو بتفكيك أجساد 5 نساء إلى شظايا هندسية حادة وأقنعة إفريقية تكعيبية، مع إلغاء تام للعمق والمنظور الكلاسيكي.
+            </p>
+          </div>
+        </div>
+
+        <!-- Artwork 2: Guernica -->
+        <div class="glass-panel rounded-3xl overflow-hidden group cursor-pointer border border-slate-800 hover:border-amber-500/50 transition duration-300 flex flex-col justify-between" onclick="openLightbox(1)">
+          <div class="relative overflow-hidden bg-slate-950 h-56 flex items-center justify-center p-2">
+            <!-- Stylized Guernica Geometry SVG -->
+            <svg class="w-full h-full object-contain transition duration-500 group-hover:scale-105" viewBox="0 0 400 300">
+              <rect width="400" height="300" fill="#111827"/>
+              <polygon points="200,20 230,60 170,60" fill="#F9FAFB" stroke="#9CA3AF" stroke-width="2"/>
+              <line x1="200" y1="20" x2="200" y2="0" stroke="#E5E7EB" stroke-width="2"/>
+              <polygon points="120,80 280,80 200,280" fill="#374151" stroke="#F3F4F6" stroke-width="1.5" opacity="0.6"/>
+              <polygon points="170,90 230,80 210,150 150,130" fill="#E5E7EB" stroke="#111827" stroke-width="2"/>
+              <polygon points="180,105 210,100 200,120" fill="#111827"/>
+              <polygon points="210,150 270,180 220,240 160,200" fill="#6B7280" stroke="#E5E7EB" stroke-width="1.5"/>
+              <polygon points="40,50 100,40 90,110 30,100" fill="#D1D5DB" stroke="#111827" stroke-width="2"/>
+              <polygon points="60,30 75,50 45,50" fill="#FFFFFF"/>
+              <polygon points="50,150 110,130 90,260 20,220" fill="#9CA3AF" stroke="#111827" stroke-width="1.5"/>
+              <polygon points="80,260 140,240 130,285" fill="#F3F4F6" stroke="#111827" stroke-width="1.5"/>
+              <line x1="100" y1="270" x2="160" y2="250" stroke="#EF4444" stroke-width="2"/>
+            </svg>
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-lg text-amber-400"></i>
+              <span>تكبير وتحليل اللوحة</span>
+            </div>
+            <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-amber-300">1937</span>
+          </div>
+
+          <div class="p-5 space-y-2">
+            <h3 class="text-sm font-bold text-white group-hover:text-amber-300 transition">الجورنيكا (Guernica)</h3>
+            <p class="text-[11px] text-amber-400 font-semibold">بابلو بيكاسو • متحف الملكة صوفيا (مدريد)</p>
+            <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed">
+              أشهر جدارية سياسية ضد أهوال الحرب في تاريخ الإنسانية. استغل بيكاسو التفكيك التكعيبي واللونين الأبيض والأسود لتجسيد الرعب، وتفتت الأجساد كشظايا هندسية درامية.
+            </p>
+          </div>
+        </div>
+
+        <!-- Artwork 3: Violin and Candlestick -->
+        <div class="glass-panel rounded-3xl overflow-hidden group cursor-pointer border border-slate-800 hover:border-amber-500/50 transition duration-300 flex flex-col justify-between" onclick="openLightbox(2)">
+          <div class="relative overflow-hidden bg-slate-950 h-56 flex items-center justify-center p-2">
+            <!-- Violin & Candlestick Analytical Cubism SVG -->
+            <svg class="w-full h-full object-contain transition duration-500 group-hover:scale-105" viewBox="0 0 400 300">
+              <rect width="400" height="300" fill="#1E1E1E"/>
+              <polygon points="150,40 250,30 220,120 130,100" fill="#786C5A" stroke="#CBB99F" stroke-width="1.2"/>
+              <polygon points="120,90 220,80 190,180 100,160" fill="#9E8F77" stroke="#3D362A" stroke-width="1.5"/>
+              <polygon points="180,120 280,110 260,220 170,210" fill="#52483B" stroke="#CBB99F" stroke-width="1.2"/>
+              <line x1="160" y1="110" x2="160" y2="230" stroke="#EAE0D0" stroke-width="1.5"/>
+              <line x1="170" y1="110" x2="170" y2="230" stroke="#EAE0D0" stroke-width="1.5"/>
+              <line x1="180" y1="110" x2="180" y2="230" stroke="#EAE0D0" stroke-width="1.5"/>
+              <path d="M 190 140 Q 200 150 190 160 Q 180 170 190 180" stroke="#D4AF37" stroke-width="2.5" fill="none"/>
+              <polygon points="210,50 230,45 225,110 215,110" fill="#D4AF37" stroke="#FFFFFF" stroke-width="1"/>
+            </svg>
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-lg text-amber-400"></i>
+              <span>تكبير وتحليل اللوحة</span>
+            </div>
+            <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-amber-300">1910</span>
+          </div>
+
+          <div class="p-5 space-y-2">
+            <h3 class="text-sm font-bold text-white group-hover:text-amber-300 transition">كمان وشمعدان (Violin and Candlestick)</h3>
+            <p class="text-[11px] text-amber-400 font-semibold">جورج براك • متحف سان فرانسيسكو للفن الحديث</p>
+            <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed">
+              نموذج عبقري للتكعيبية التحليلية. تم تفتيت الآلة الموسيقية إلى مستويات متداخلة تندمج مع الفراغ المحيط، مع إبقاء خطوط الأوتار كرمز تعريفي للآلة.
+            </p>
+          </div>
+        </div>
+
+        <!-- Artwork 4: Portrait of Picasso -->
+        <div class="glass-panel rounded-3xl overflow-hidden group cursor-pointer border border-slate-800 hover:border-amber-500/50 transition duration-300 flex flex-col justify-between" onclick="openLightbox(3)">
+          <div class="relative overflow-hidden bg-slate-950 h-56 flex items-center justify-center p-2">
+            <!-- Portrait of Picasso by Juan Gris SVG -->
+            <svg class="w-full h-full object-contain transition duration-500 group-hover:scale-105" viewBox="0 0 400 300">
+              <rect width="400" height="300" fill="#1E232A"/>
+              <polygon points="80,20 220,10 170,140 60,110" fill="#4B6584" stroke="#778CA3" stroke-width="1.5"/>
+              <polygon points="190,15 320,10 270,130 160,110" fill="#A5B1C2" stroke="#2C3A47" stroke-width="1.5"/>
+              <polygon points="120,110 260,95 210,240 90,210" fill="#D1D8E0" stroke="#4B6584" stroke-width="1.5"/>
+              <polygon points="160,50 220,40 200,120 140,110" fill="#F7D794" stroke="#F5CD79" stroke-width="1.5"/>
+              <polygon points="180,60 210,55 200,90 170,85" fill="#E77F67"/>
+              <polygon points="100,210 180,190 170,270 90,260" fill="#786FA6" stroke="#574B90" stroke-width="1.5"/>
+              <circle cx="120" cy="240" r="10" fill="#F8A5C2"/>
+            </svg>
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-lg text-amber-400"></i>
+              <span>تكبير وتحليل اللوحة</span>
+            </div>
+            <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-amber-300">1912</span>
+          </div>
+
+          <div class="p-5 space-y-2">
+            <h3 class="text-sm font-bold text-white group-hover:text-amber-300 transition">بورتريه بيكاسو (Portrait of Picasso)</h3>
+            <p class="text-[11px] text-amber-400 font-semibold">خوان جريس • معهد الفنون في شيكاغو</p>
+            <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed">
+              تحفة هندسية رياضية صارمة. قسّم خوان جريس اللوحة عبر خطوط مائلة ودرجات لونية زرقاء وفضية منتظمة، ممسكاً بباليتة الألوان كتحية لمؤسس الحركة.
+            </p>
+          </div>
+        </div>
+
+        <!-- Artwork 5: The City -->
+        <div class="glass-panel rounded-3xl overflow-hidden group cursor-pointer border border-slate-800 hover:border-amber-500/50 transition duration-300 flex flex-col justify-between" onclick="openLightbox(4)">
+          <div class="relative overflow-hidden bg-slate-950 h-56 flex items-center justify-center p-2">
+            <!-- Fernand Leger The City SVG -->
+            <svg class="w-full h-full object-contain transition duration-500 group-hover:scale-105" viewBox="0 0 400 300">
+              <rect width="400" height="300" fill="#18181B"/>
+              <rect x="50" y="30" width="40" height="240" rx="8" fill="#EF4444" stroke="#B91C1C" stroke-width="2"/>
+              <rect x="110" y="50" width="50" height="200" rx="10" fill="#3B82F6" stroke="#1D4ED8" stroke-width="2"/>
+              <rect x="180" y="20" width="45" height="250" rx="8" fill="#FACC15" stroke="#CA8A04" stroke-width="2"/>
+              <line x1="240" y1="40" x2="360" y2="40" stroke="#FFFFFF" stroke-width="4"/>
+              <line x1="250" y1="80" x2="350" y2="80" stroke="#FFFFFF" stroke-width="4"/>
+              <line x1="260" y1="120" x2="340" y2="120" stroke="#FFFFFF" stroke-width="4"/>
+              <circle cx="300" cy="200" r="35" fill="#10B981" stroke="#047857" stroke-width="3"/>
+            </svg>
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-lg text-amber-400"></i>
+              <span>تكبير وتحليل اللوحة</span>
+            </div>
+            <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-amber-300">1919</span>
+          </div>
+
+          <div class="p-5 space-y-2">
+            <h3 class="text-sm font-bold text-white group-hover:text-amber-300 transition">المدينة (The City)</h3>
+            <p class="text-[11px] text-amber-400 font-semibold">فرنان ليجيه • متحف فيلادلفيا للفنون</p>
+            <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed">
+              تجسيد لـ "التكعيبية الأنبوبية والآلية" (Tubism). حوّل ليجيه مباني المدينة الصناعية وسلالمها وأعمدتها إلى أسطوانات وألوان حية تعبر عن إيقاع العصر الآلي الحديث.
+            </p>
+          </div>
+        </div>
+
+        <!-- Artwork 6: Still Life with Chair Caning -->
+        <div class="glass-panel rounded-3xl overflow-hidden group cursor-pointer border border-slate-800 hover:border-amber-500/50 transition duration-300 flex flex-col justify-between" onclick="openLightbox(5)">
+          <div class="relative overflow-hidden bg-slate-950 h-56 flex items-center justify-center p-2">
+            <!-- Still Life with Chair Caning Oval SVG -->
+            <svg class="w-full h-full object-contain transition duration-500 group-hover:scale-105" viewBox="0 0 400 300">
+              <rect width="400" height="300" fill="#1E1915"/>
+              <ellipse cx="200" cy="150" rx="170" ry="120" fill="#423428" stroke="#D4AF37" stroke-width="4" stroke-dasharray="10,5"/>
+              <polygon points="80,140 180,120 160,230 70,210" fill="#DDB892" stroke="#B08968" stroke-width="1"/>
+              <text x="190" y="140" font-size="34" font-family="Arial,sans-serif" font-weight="900" fill="#FFFFFF" letter-spacing="4">JOU</text>
+              <polygon points="210,140 280,120 270,180 200,190" fill="#7F7F7F" stroke="#E5E7EB" stroke-width="1.5" opacity="0.8"/>
+            </svg>
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-bold gap-2">
+              <i class="fa-solid fa-magnifying-glass-plus text-lg text-amber-400"></i>
+              <span>تكبير وتحليل اللوحة</span>
+            </div>
+            <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 text-[10px] font-mono text-amber-300">1912</span>
+          </div>
+
+          <div class="p-5 space-y-2">
+            <h3 class="text-sm font-bold text-white group-hover:text-amber-300 transition">طبيعة صامتة مع قش الكراسي (Still Life with Chair Caning)</h3>
+            <p class="text-[11px] text-amber-400 font-semibold">بابلو بيكاسو • متحف بيكاسو (باريس)</p>
+            <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed">
+              أول عمل "كولاج" في تاريخ الفن الغربي على إطار بيضاوي محاط بحبل حقيقي؛ لصق فيه بيكاسو مشمعاً مطبوعاً بنقشة قش الكراسي مع حروف صحيفة (JOU).
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 6: Interactive Cubist Lab (المختبر التكعيبي التفاعلي) -->
+  <section id="lab" class="no-print py-16 border-b border-slate-800/80 bg-slate-950/60">
+    <div class="max-w-5xl mx-auto px-4 space-y-8 text-center">
+      
+      <div class="space-y-2">
+        <span class="text-xs font-bold text-amber-400 tracking-widest uppercase">المحور السادس — تفاعلي مباشر</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-white flex items-center justify-center gap-2.5">
+          <i class="fa-solid fa-flask-vial text-amber-500"></i>
+          <span>مختبر التفكيك الهندسي التكعيبي (Interactive Canvas)</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-400 max-w-2xl mx-auto">
+          جرّب بنفسك كيف يُحوّل الفنان التكعيبي الأشكال العادية إلى مضلعات وزوايا متداخلة! اضغط على الأزرار لتوليد تشكيل تكعيبي حيّ:
+        </p>
+      </div>
+
+      <div class="glass-panel rounded-3xl p-6 sm:p-8 max-w-3xl mx-auto space-y-6">
+        <!-- Canvas Container -->
+        <div class="relative w-full aspect-[4/3] max-h-[380px] bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 shadow-2xl flex items-center justify-center">
+          <canvas id="cubistCanvas" width="600" height="450" class="w-full h-full object-contain cursor-crosshair"></canvas>
+          <div id="canvasHint" class="absolute top-3 right-3 px-3 py-1 rounded-lg bg-black/60 backdrop-blur-sm text-[11px] text-amber-300 pointer-events-none">
+            <i class="fa-solid fa-hand-pointer ml-1"></i> انقر بالماوس على اللوحة لإضافة زوايا هندسية
+          </div>
+        </div>
+
+        <!-- Controls Bar -->
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-slate-800 text-xs">
+          
+          <div class="flex items-center gap-3">
+            <span class="text-slate-400 font-semibold">لوحة الألوان:</span>
+            <select id="paletteSelect" onchange="generateCubistArt()" class="bg-slate-900 border border-slate-700 text-amber-300 rounded-xl px-3 py-2 text-xs focus:outline-none focus:border-amber-500">
+              <option value="analytical">تحليلية (ترابي، رمادي، نحاسي)</option>
+              <option value="synthetic">تركيبية (أزرق، قرمزي، ذهبي)</option>
+              <option value="monochrome">أحادية (أسود، رصاصي، أبيض)</option>
+            </select>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button onclick="generateCubistArt()" class="px-4 py-2 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold transition flex items-center gap-1.5 shadow-md shadow-amber-600/20">
+              <i class="fa-solid fa-rotate"></i>
+              <span>توليد تكوين جديد</span>
+            </button>
+            <button onclick="downloadCanvasArt()" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 font-bold transition flex items-center gap-1.5" title="تنزيل اللوحة التكعيبية لجهازك">
+              <i class="fa-solid fa-download"></i>
+              <span>حفظ كصورة</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 7: Conclusion & References -->
+  <section class="py-16 border-b border-slate-800/80">
+    <div class="max-w-5xl mx-auto px-4 space-y-10">
+      
+      <div class="text-right space-y-2">
+        <span class="text-xs font-bold text-amber-400 tracking-widest uppercase">المحور السابع</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-white flex items-center gap-2.5">
+          <i class="fa-solid fa-book-bookmark text-amber-500"></i>
+          <span>الخاتمة والنتائج والمراجع الأكاديمية</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Results Card -->
+        <div class="glass-panel rounded-3xl p-6 sm:p-8 space-y-3">
+          <h3 class="text-sm font-bold text-amber-300 flex items-center gap-2">
+            <i class="fa-solid fa-graduation-cap"></i> نتائج البحث واستخلاصاته
+          </h3>
+          <ul class="space-y-2.5 text-xs text-slate-300 leading-relaxed list-disc list-inside">
+            <li>لم تكن التكعيبية مجرد طريقة رسم، بل كانت <strong>ثورة فلسفية في طريقة إدراك العقل البشري للمادة والزمن والفضاء</strong>.</li>
+            <li>أعادت التكعيبية الاعتبار للقيم الهندسية الصافية، مما مهّد لظهور حركات فنية كبرى مثل الفن التجريدي، والتصميم المعماري الحديث (مدرسة الباوهاوس Bauhaus).</li>
+            <li>أثبتت التكعيبية أن محاكاة الواقع حرفياً ليست وظيفة الفن، بل إعادة خلقه والتعبير عن جوهره الفكري.</li>
+          </ul>
+        </div>
+
+        <!-- Academic References Card -->
+        <div class="glass-panel rounded-3xl p-6 sm:p-8 space-y-3">
+          <h3 class="text-sm font-bold text-amber-300 flex items-center gap-2">
+            <i class="fa-solid fa-quote-right"></i> قائمة المصادر والمراجع
+          </h3>
+          <ol class="space-y-2 text-xs text-slate-400 leading-relaxed list-decimal list-inside">
+            <li>إي. إتش. غومبريتش — <em>«قصة الفن» (The Story of Art)</em>.</li>
+            <li>أرشيف متحف الفن الحديث بنيويورك (MoMA — Cubism History & Collections).</li>
+            <li>متحف الملكة صوفيا الوطني للفنون بمدريد (Museo Reina Sofia — Guernica Archives).</li>
+            <li>د. محمود البسيوني — <em>«الفن الحديث في القرن العشرين»</em>، دار المعارف.</li>
+            <li>أرشيف متحف بيكاسو بباريس (Musee Picasso Paris).</li>
+          </ol>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Student Card (بطاقة تسليم البحث المدرسي) -->
+  <section id="student" class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="glass-panel rounded-3xl p-8 sm:p-10 border-2 border-amber-500/40 relative shadow-2xl space-y-6 text-center">
+        
+        <div class="w-16 h-16 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-3xl mx-auto border border-amber-500/40">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+
+        <div class="space-y-2">
+          <h2 class="text-xl sm:text-2xl font-black text-white">بطاقة اعتماد وتسليم البحث المدرسي</h2>
+          <p class="text-xs text-amber-300 font-semibold">مقدم إلى قسم التربية الفنية والأنشطة الإبداعية</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-800 text-xs">
+          <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-1">
+            <span class="text-slate-500 block">إعداد وتصميم الطالب:</span>
+            <strong class="text-sm text-white block">مازن عمرو</strong>
+            <span class="text-[10px] text-amber-400 font-semibold">باحث ومصمم رقمي</span>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-1">
+            <span class="text-slate-500 block">المادة الدراسية:</span>
+            <strong class="text-sm text-white block">التربية الفنية والرسم</strong>
+            <span class="text-[10px] text-blue-400 font-semibold">مشروع مصور تفاعلي</span>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-1">
+            <span class="text-slate-500 block">إشراف وتوجيه:</span>
+            <strong class="text-sm text-white block">معلمة التربية الفنية</strong>
+            <span class="text-[10px] text-emerald-400 font-semibold">العام الدراسي 2026 / 2027</span>
+          </div>
+        </div>
+
+        <div class="pt-4 flex flex-wrap items-center justify-center gap-3 no-print">
+          <button onclick="window.print()" class="px-5 py-2.5 rounded-xl font-bold bg-gradient-to-r from-amber-600 to-yellow-500 hover:from-amber-500 hover:to-yellow-400 text-slate-950 text-xs transition shadow-lg shadow-amber-500/30 flex items-center gap-2">
+            <i class="fa-solid fa-file-pdf text-sm"></i>
+            <span>حفظ نسخة ورقية رسمية (Print / PDF)</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal for Artworks -->
+  <div id="artLightbox" class="fixed inset-0 bg-black/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+    <div class="max-w-4xl w-full glass-panel rounded-3xl p-6 sm:p-8 space-y-4 relative border border-amber-500/30 max-h-[90vh] overflow-y-auto">
+      <button onclick="closeLightbox()" class="absolute top-4 left-4 w-9 h-9 rounded-full bg-slate-800/80 text-slate-300 hover:text-white flex items-center justify-center text-lg transition">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <div id="lightboxArtPreview" class="h-64 sm:h-80 bg-slate-950 rounded-2xl flex items-center justify-center p-3 border border-slate-800">
+          <!-- Rendered SVG artwork inserted here -->
+        </div>
+
+        <div class="space-y-3 text-right">
+          <span id="lightboxYear" class="px-2.5 py-0.5 rounded bg-amber-500/20 text-amber-400 text-xs font-mono font-bold"></span>
+          <h3 id="lightboxTitle" class="text-lg sm:text-xl font-black text-white"></h3>
+          <p id="lightboxArtist" class="text-xs text-amber-300 font-bold"></p>
+          <p id="lightboxMuseum" class="text-[11px] text-slate-400 font-semibold"></p>
+          
+          <div class="pt-3 border-t border-slate-800 space-y-2">
+            <h4 class="text-xs font-bold text-white flex items-center gap-1.5">
+              <i class="fa-solid fa-draw-polygon text-amber-400"></i>
+              <span>التحليل الهندسي للوحة:</span>
+            </h4>
+            <p id="lightboxAnalysis" class="text-xs text-slate-300 leading-relaxed"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="no-print py-8 border-t border-slate-800 text-center text-xs text-slate-500">
+    <div class="max-w-5xl mx-auto px-4 space-y-2">
+      <p>© 2026 بحث الهندسة التكعيبية في الفن التشكيلي — إعداد وتطوير الطالب: <strong>مازن عمرو</strong></p>
+      <p class="text-[11px] text-slate-600">تم تصميم وبرمجة الموقع ليكون تجربة بصرية تفاعلية مستوحاة من روح العمارة والفن التكعيبي الحديث.</p>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript Logic -->
+  <script>
+    // Master Artworks Database for Lightbox
+    const artworks = [
+      {
+        title: "آنسات أفينيون (Les Demoiselles d\'Avignon)",
+        artist: "بابلو بيكاسو (Pablo Picasso)",
+        year: "1907",
+        museum: "متحف الفن الحديث — MoMA (نيويورك)",
+        analysis: "تعد هذه اللوحة الانقلاب الأعظم في تاريخ الرسم الحديث. قام بيكاسو بإلغاء نقطة التلاشي والمنظور الثلاثي الأبعاد تماماً، واستبدل التجسيم الكلاسيكي بمستويات مسطحة وحواف حادة كالشظايا. وتظهر الوجوه على اليمين متأثرة بالأقنعة الإفريقية التجريدية، حيث تم رسم ملامح الوجه من زوايا متعددة في آن واحد ليخلق تأثيراً بصرياً صادماً ومتحرراً من قيود الواقعية.",
+        svg: `<svg class="w-full h-full object-contain" viewBox="0 0 400 300">
+          <rect width="400" height="300" fill="#1C1814"/>
+          <polygon points="50,20 130,70 90,220 30,180" fill="#C68B59" stroke="#D4AF37" stroke-width="2"/>
+          <polygon points="120,40 220,10 200,160 110,120" fill="#8C5E3C" stroke="#FFFFFF" stroke-width="1.5"/>
+          <polygon points="210,30 330,60 290,240 180,180" fill="#C68B59" stroke="#D4AF37" stroke-width="2"/>
+          <polygon points="280,40 370,110 350,280 270,220" fill="#5A3D28" stroke="#D4AF37" stroke-width="2"/>
+          <polygon points="300,70 360,90 340,160 280,140" fill="#3D5A80" stroke="#93C5FD" stroke-width="2"/>
+          <line x1="120" y1="40" x2="290" y2="240" stroke="#FDE68A" stroke-width="2.5" stroke-dasharray="4,4"/>
+        </svg>`
+      },
+      {
+        title: "الجورنيكا (Guernica)",
+        artist: "بابلو بيكاسو (Pablo Picasso)",
+        year: "1937",
+        museum: "متحف الملكة صوفيا الوطني (مدريد)",
+        analysis: "وظف بيكاسو الهندسة التكعيبية للتعبير عن مأساة تدمير بلدة جورنيكا الإسبانية بالقنابل. حظر استخدام الألوان واكتفى بالأبيض والأسود والرمادي لمحاكاة صحف الأخبار والحداد. تظهر الأشكال (الحصان الصارخ، الثور، الأم المكلومة) كمثلثات وشظايا هندسية متداخلة ترمز إلى تفحم المدينة وتفتت الأجساد في مشهد مأساوي خالد.",
+        svg: `<svg class="w-full h-full object-contain" viewBox="0 0 400 300">
+          <rect width="400" height="300" fill="#111827"/>
+          <polygon points="200,20 230,60 170,60" fill="#F9FAFB" stroke="#9CA3AF" stroke-width="2"/>
+          <polygon points="120,80 280,80 200,280" fill="#374151" stroke="#F3F4F6" stroke-width="2" opacity="0.7"/>
+          <polygon points="170,90 230,80 210,150 150,130" fill="#E5E7EB" stroke="#111827" stroke-width="2"/>
+          <polygon points="40,50 100,40 90,110 30,100" fill="#D1D5DB" stroke="#111827" stroke-width="2"/>
+          <polygon points="50,150 110,130 90,260 20,220" fill="#9CA3AF" stroke="#111827" stroke-width="2"/>
+          <line x1="100" y1="270" x2="160" y2="250" stroke="#EF4444" stroke-width="3"/>
+        </svg>`
+      },
+      {
+        title: "كمان وشمعدان (Violin and Candlestick)",
+        artist: "جورج براك (Georges Braque)",
+        year: "1910",
+        museum: "متحف سان فرانسيسكو للفن الحديث (SFMOMA)",
+        analysis: "من أروع أمثلة التكعيبية التحليلية. قام جورج براك بتفتيت الكمان والشمعدان إلى مسطحات هندسية ذات حواف حادة تندمج كلياً مع الفضاء المحيط بها. الألوان مقيدة تماماً بدرجات البني والرمادي والبيج لتركيز انتباه الرائي على العلاقات المكانية والهندسية الخالصة، مع الإبقاء على رمز أوتار الكمان كدليل إرشادي للبصر.",
+        svg: `<svg class="w-full h-full object-contain" viewBox="0 0 400 300">
+          <rect width="400" height="300" fill="#1E1E1E"/>
+          <polygon points="150,40 250,30 220,120 130,100" fill="#786C5A" stroke="#CBB99F" stroke-width="2"/>
+          <polygon points="120,90 220,80 190,180 100,160" fill="#9E8F77" stroke="#3D362A" stroke-width="2"/>
+          <polygon points="180,120 280,110 260,220 170,210" fill="#52483B" stroke="#CBB99F" stroke-width="2"/>
+          <line x1="160" y1="110" x2="160" y2="230" stroke="#EAE0D0" stroke-width="2"/>
+          <line x1="175" y1="110" x2="175" y2="230" stroke="#EAE0D0" stroke-width="2"/>
+          <path d="M 190 140 Q 200 150 190 160 Q 180 170 190 180" stroke="#D4AF37" stroke-width="3" fill="none"/>
+        </svg>`
+      },
+      {
+        title: "بورتريه بيكاسو (Portrait of Picasso)",
+        artist: "خوان جريس (Juan Gris)",
+        year: "1912",
+        museum: "معهد الفنون في شيكاغو (Art Institute of Chicago)",
+        analysis: "يُظهر هذا العمل المنهج الرياضي الصارم الذي ابتكره خوان جريس. اللوحة مقسمة عبر شبكة مائلة من الخطوط المتوازية والزوايا المحسوبة، حيث تم تشريح وجه بيكاسو وملابسه إلى مساحات لونية نقية ومتوازنة ذات بريق معدني يبرز عبقرية الرسم الهندسي المنضبط.",
+        svg: `<svg class="w-full h-full object-contain" viewBox="0 0 400 300">
+          <rect width="400" height="300" fill="#1E232A"/>
+          <polygon points="80,20 220,10 170,140 60,110" fill="#4B6584" stroke="#778CA3" stroke-width="2"/>
+          <polygon points="190,15 320,10 270,130 160,110" fill="#A5B1C2" stroke="#2C3A47" stroke-width="2"/>
+          <polygon points="120,110 260,95 210,240 90,210" fill="#D1D8E0" stroke="#4B6584" stroke-width="2"/>
+          <polygon points="160,50 220,40 200,120 140,110" fill="#F7D794" stroke="#F5CD79" stroke-width="2"/>
+          <polygon points="100,210 180,190 170,270 90,260" fill="#786FA6" stroke="#574B90" stroke-width="2"/>
+        </svg>`
+      },
+      {
+        title: "المدينة (The City)",
+        artist: "فرنان ليجيه (Fernand Leger)",
+        year: "1919",
+        museum: "متحف فيلادلفيا للفنون (Philadelphia Museum of Art)",
+        analysis: "ابتكر ليجيه أسلوباً مشتقاً من التكعيبية عُرف باسم التكعيبية الأنبوبية (Tubism). تم تفكيك معالم المدينة الحديثة (ناطحات السحاب، الجسور، السلالم الحديدية، أعمدة الإنارة) إلى أسطوانات ومواسير ومسننات ذات ألوان صريحة ومبهجة (أحمر، أزرق، أصفر)، مجسداً صخب وإيقاع الثورة الصناعية.",
+        svg: `<svg class="w-full h-full object-contain" viewBox="0 0 400 300">
+          <rect width="400" height="300" fill="#18181B"/>
+          <rect x="50" y="30" width="40" height="240" rx="8" fill="#EF4444" stroke="#B91C1C" stroke-width="3"/>
+          <rect x="110" y="50" width="50" height="200" rx="10" fill="#3B82F6" stroke="#1D4ED8" stroke-width="3"/>
+          <rect x="180" y="20" width="45" height="250" rx="8" fill="#FACC15" stroke="#CA8A04" stroke-width="3"/>
+          <line x1="240" y1="40" x2="360" y2="40" stroke="#FFFFFF" stroke-width="5"/>
+          <line x1="250" y1="80" x2="350" y2="80" stroke="#FFFFFF" stroke-width="5"/>
+          <circle cx="300" cy="200" r="40" fill="#10B981" stroke="#047857" stroke-width="4"/>
+        </svg>`
+      },
+      {
+        title: "طبيعة صامتة مع قش الكراسي (Still Life with Chair Caning)",
+        artist: "بابلو بيكاسو (Pablo Picasso)",
+        year: "1912",
+        museum: "متحف بيكاسو الوطني (باريس)",
+        analysis: "نقطة انطلاق التكعيبية التركيبية وأول عمل كولاج معترف به في تاريخ الفن الحديث. رسم بيكاسو على قماش بيضاوي ولصق قطعة حقيقية من المشمع المطبوع بنقشة قش الكراسي، وأحاط اللوحة بحبل بحري حقيقي بدلاً من الإطار المذهب، مع رسم حروف صحيفة (JOU) ليمزج الفن بالحياة اليومية الواقعية.",
+        svg: `<svg class="w-full h-full object-contain" viewBox="0 0 400 300">
+          <rect width="400" height="300" fill="#1E1915"/>
+          <ellipse cx="200" cy="150" rx="170" ry="120" fill="#423428" stroke="#D4AF37" stroke-width="5" stroke-dasharray="12,6"/>
+          <polygon points="80,140 180,120 160,230 70,210" fill="#DDB892" stroke="#B08968" stroke-width="2"/>
+          <text x="190" y="145" font-size="38" font-family="Arial,sans-serif" font-weight="900" fill="#FFFFFF" letter-spacing="4">JOU</text>
+          <polygon points="210,140 280,120 270,180 200,190" fill="#7F7F7F" stroke="#E5E7EB" stroke-width="2" opacity="0.85"/>
+        </svg>`
+      }
+    ];
+
+    function openLightbox(index) {
+      const art = artworks[index];
+      if (!art) return;
+      document.getElementById("lightboxTitle").textContent = art.title;
+      document.getElementById("lightboxArtist").textContent = art.artist;
+      document.getElementById("lightboxYear").textContent = art.year;
+      document.getElementById("lightboxMuseum").textContent = art.museum;
+      document.getElementById("lightboxAnalysis").textContent = art.analysis;
+      document.getElementById("lightboxArtPreview").innerHTML = art.svg;
+      document.getElementById("artLightbox").classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeLightbox() {
+      document.getElementById("artLightbox").classList.add("hidden");
+      document.body.style.overflow = "auto";
+    }
+
+    // Interactive Canvas Procedural Cubist Generator
+    const canvas = document.getElementById("cubistCanvas");
+    const ctx = canvas.getContext("2d");
+
+    const palettes = {
+      analytical: ["#786C5A", "#9E8F77", "#52483B", "#3D362A", "#CBB99F", "#A3927E", "#2B261F"],
+      synthetic: ["#EF4444", "#3B82F6", "#FACC15", "#10B981", "#8B5CF6", "#F97316", "#EC4899", "#1E293B"],
+      monochrome: ["#111827", "#1F2937", "#374151", "#4B5563", "#9CA3AF", "#D1D5DB", "#F3F4F6", "#FFFFFF"]
+    };
+
+    function generateCubistArt() {
+      const selected = document.getElementById("paletteSelect").value || "analytical";
+      const colors = palettes[selected];
+      const w = canvas.width;
+      const h = canvas.height;
+
+      // Dark Canvas Base
+      ctx.fillStyle = selected === "synthetic" ? "#0F172A" : (selected === "monochrome" ? "#0A0A0A" : "#1C1814");
+      ctx.fillRect(0, 0, w, h);
+
+      // Number of faceted polygon shards
+      const shardCount = 28;
+      
+      for (let i = 0; i < shardCount; i++) {
+        ctx.beginPath();
+        const cx = Math.random() * (w * 0.8) + (w * 0.1);
+        const cy = Math.random() * (h * 0.8) + (h * 0.1);
+        const sides = Math.floor(Math.random() * 3) + 3; // 3 to 5 sides
+        const radius = Math.random() * 90 + 40;
+
+        for (let s = 0; s < sides; s++) {
+          const angle = (s / sides) * Math.PI * 2 + (Math.random() * 0.5);
+          const px = cx + Math.cos(angle) * radius * (Math.random() * 0.6 + 0.7);
+          const py = cy + Math.sin(angle) * radius * (Math.random() * 0.6 + 0.7);
+          if (s === 0) ctx.moveTo(px, py);
+          else ctx.lineTo(px, py);
+        }
+        ctx.closePath();
+
+        // Fill with randomized palette color and alpha
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        ctx.fillStyle = color;
+        ctx.globalAlpha = Math.random() * 0.45 + 0.45;
+        ctx.fill();
+
+        // Hard geometric outline
+        ctx.strokeStyle = Math.random() > 0.5 ? "#D4AF37" : "#FFFFFF";
+        ctx.lineWidth = Math.random() * 2 + 1;
+        ctx.globalAlpha = 0.75;
+        ctx.stroke();
+      }
+
+      // Add Cubist lines & musical/newspaper fragments
+      ctx.globalAlpha = 0.85;
+      for (let l = 0; l < 8; l++) {
+        ctx.beginPath();
+        ctx.moveTo(Math.random() * w, Math.random() * h);
+        ctx.lineTo(Math.random() * w, Math.random() * h);
+        ctx.strokeStyle = "#FDE68A";
+        ctx.lineWidth = Math.random() * 2 + 1;
+        ctx.stroke();
+      }
+
+      // Stenciled text fragment like Picasso & Braque
+      ctx.fillStyle = "#FFFFFF";
+      ctx.globalAlpha = 0.9;
+      ctx.font = "bold 28px Cairo, sans-serif";
+      ctx.fillText("CHROMA", Math.random() * (w - 200) + 50, Math.random() * (h - 100) + 80);
+      
+      ctx.font = "bold 18px Arial, sans-serif";
+      ctx.fillText("JOU", Math.random() * (w - 150) + 50, Math.random() * (h - 100) + 120);
+
+      ctx.globalAlpha = 1.0;
+    }
+
+    // Interactive click to add facets
+    canvas.addEventListener("click", (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const scaleX = canvas.width / rect.width;
+      const scaleY = canvas.height / rect.height;
+      const x = (e.clientX - rect.left) * scaleX;
+      const y = (e.clientY - rect.top) * scaleY;
+
+      const selected = document.getElementById("paletteSelect").value || "analytical";
+      const colors = palettes[selected];
+
+      ctx.beginPath();
+      const sides = 4;
+      const radius = 65;
+      for (let s = 0; s < sides; s++) {
+        const angle = (s / sides) * Math.PI * 2;
+        const px = x + Math.cos(angle) * radius * (Math.random() * 0.4 + 0.8);
+        const py = y + Math.sin(angle) * radius * (Math.random() * 0.4 + 0.8);
+        if (s === 0) ctx.moveTo(px, py);
+        else ctx.lineTo(px, py);
+      }
+      ctx.closePath();
+      ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
+      ctx.globalAlpha = 0.85;
+      ctx.fill();
+      ctx.strokeStyle = "#D4AF37";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+      ctx.globalAlpha = 1.0;
+    });
+
+    function downloadCanvasArt() {
+      const link = document.createElement("a");
+      link.download = "Cubist_Artwork_MazenAmr.png";
+      link.href = canvas.toDataURL("image/png");
+      link.click();
+    }
+
+    // Initialize Canvas on load
+    window.addEventListener("load", () => {
+      generateCubistArt();
+    });
+  </script>
+
+</body>
+</html>
